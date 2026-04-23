@@ -10,7 +10,7 @@ const navLinks = [
   { label: "Sobre", href: "/#sobre" },
   { label: "Método", href: "/#metodo" },
   { label: "Resultados", href: "/#resultados" },
-  { label: "Escritórios", href: "/escritorios" },
+  { label: "Escritórios", href: "/#escritorios" },
   { label: "Contato", href: "/#contato" },
 ];
 

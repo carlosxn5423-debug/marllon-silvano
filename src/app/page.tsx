@@ -5,6 +5,7 @@ import { About } from "@/components/sections/About";
 import { Pains } from "@/components/sections/Pains";
 import { Method } from "@/components/sections/Method";
 import { Results } from "@/components/sections/Results";
+import { FirmsGrid } from "@/components/sections/FirmsGrid";
 import { FAQ } from "@/components/sections/FAQ";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Footer } from "@/components/sections/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
         <Pains />
         <Method />
         <Results />
+        <FirmsGrid />
         <FAQ />
         <ContactCTA />
       </main>

@@ -304,7 +304,7 @@ export const content = {
       { label: "Método", href: "/#metodo" },
       { label: "Resultados", href: "/#resultados" },
       { label: "Contato", href: "/#contato" },
-      { label: "Escritórios", href: "/escritorios" },
+      { label: "Escritórios", href: "/#escritorios" },
     ],
   },
 };
