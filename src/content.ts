@@ -2,35 +2,35 @@ export const content = {
   professional: {
     name: "Marllon Silvano",
     // [PERSONALIZAR] Título/especialidade
-    title: "Consultor em Estruturação Comercial Jurídica",
+    title: "Parceiro de Gestão para Escritórios de Advocacia",
     // [PERSONALIZAR] Caminhos das fotos (colocar em /public/images/)
     photoHero: "/images/responsavel.jpg",
     photoAbout: "/images/responsavel-working.jpg",
     // [PERSONALIZAR] Links de contato
-    whatsapp: "5500000000000", // ex: 5511999999999
-    whatsappMessage: "Olá, Marllon! Gostaria de agendar um diagnóstico gratuito.",
+    whatsapp: "5541988203774", // ex: 5511999999999
+    whatsappMessage: "Olá, Marllon!",
     email: "contato@marllonsilvano.com",
-    linkedin: "https://linkedin.com/in/marllonsilvano",
-    instagram: "https://instagram.com/marllonsilvano",
+    linkedin: "",
+    instagram: "https://instagram.com/MarlloHr",
   },
 
   stats: {
     // [PERSONALIZAR] Números reais
     yearsInSector: "+8",
-    firmsStructured: "+40",
+    firmsManagedCount: "+40",
     revenueGrowth: "+35%",
   },
 
   hero: {
-    eyebrow: "Consultoria Estratégica",
+    eyebrow: "Parceria de Gestão",
     headline:
-      "Estruturação comercial para escritórios de advocacia que querem crescer com previsibilidade.",
+      "Gerenciamos escritórios de advocacia para que os sócios foquem no que sabem fazer melhor: o direito.",
     subheadline:
-      "Construímos o motor comercial da sua banca — captação, funil, processos e time — respeitando a ética e o posicionamento que você levou anos para consolidar.",
-    ctaPrimary: "Agendar diagnóstico gratuito",
-    ctaSecondary: "Conhecer o método",
+      "Assumimos a gestão comercial e operacional da sua banca como parceiros — captação, processos, time e previsibilidade de receita — dentro das normas da OAB.",
+    ctaPrimary: "Quero ser parceiro",
+    ctaSecondary: "Como funciona",
     // [PERSONALIZAR] Prova social
-    socialProof: "+40 escritórios atendidos · +8 anos de atuação",
+    socialProof: "+40 escritórios gerenciados · +8 anos no setor jurídico",
   },
 
   credibility: {
@@ -48,23 +48,23 @@ export const content = {
   about: {
     eyebrow: "I — Sobre",
     headline:
-      "Experiência construída ao lado de sócios que vivem o desafio de gerir e vender ao mesmo tempo.",
+      "Uma parceria real: entramos na operação, assumimos a gestão e crescemos juntos.",
     paragraphs: [
       // [PERSONALIZAR] Formação acadêmica
       "Graduado em [CURSO] pela [INSTITUIÇÃO], com MBA em Gestão e Marketing Jurídico. Formação construída para entender tanto a lógica da prática jurídica quanto as exigências de um negócio de alta performance.",
       // [PERSONALIZAR] Trajetória
-      "Mais de oito anos dedicados ao setor jurídico, tendo atuado como [CARGOS RELEVANTES] em bancas de diferentes portes e áreas de atuação — do escritório boutique ao regional com múltiplos sócios.",
+      "Mais de oito anos gerenciando bancas jurídicas de diferentes portes e áreas de atuação — do escritório boutique ao regional com múltiplos sócios. Não vendemos consultoria e saímos: entramos como parceiros e ficamos.",
       // [PERSONALIZAR] Especialização
-      "A especialização no nicho jurídico não é acidental: escritórios de advocacia têm dinâmicas únicas de relacionamento, ciclos de venda longos e restrições éticas que precisam ser respeitadas. Trabalhar fora disso é receita para resultado nulo.",
+      "O modelo de parceria existe porque o problema não é falta de conhecimento jurídico — é falta de tempo, estrutura e pessoas dedicadas ao negócio. É isso que trazemos para dentro da banca.",
     ],
     // [PERSONALIZAR] Frase de destaque
     quote:
-      '"O crescimento sustentável de uma banca começa quando os sócios param de ser os únicos comerciais do escritório."',
+      '"Advogado bom praticando direito vale mais do que advogado bom perdendo tempo em gestão."',
   },
 
   pains: {
-    eyebrow: "II — Diagnóstico",
-    headline: "Se você reconhece estes cenários, podemos conversar.",
+    eyebrow: "II — Cenário",
+    headline: "Se você reconhece estes cenários, podemos ser parceiros.",
     items: [
       {
         title: "Receita imprevisível",
@@ -73,9 +73,9 @@ export const content = {
         icon: "TrendingDown",
       },
       {
-        title: "Sócios como vendedores",
+        title: "Sócios na operação",
         description:
-          "Os sócios gastam energia vendendo quando deveriam estar praticando direito. O comercial sem dono paralisa o crescimento.",
+          "Os sócios gastam energia em gestão e vendas quando deveriam estar praticando direito. A banca cresce até onde o tempo dos sócios permite.",
         icon: "Users",
       },
       {
@@ -85,71 +85,71 @@ export const content = {
         icon: "GitBranch",
       },
       {
-        title: "Crescimento limitado",
+        title: "Sem estrutura de gestão",
         description:
-          "A banca chegou num teto. Há capacidade técnica para crescer, mas a estrutura comercial não suporta a expansão.",
+          "A banca cresceu, mas sem processos, indicadores ou alguém responsável pelo negócio. Tudo depende da memória e energia dos sócios.",
         icon: "BarChart2",
       },
     ],
   },
 
   method: {
-    eyebrow: "III — Método",
-    headline: "Um método construído para a realidade de bancas jurídicas.",
+    eyebrow: "III — Como funciona",
+    headline: "Entramos como parceiros. Gerenciamos. Crescemos juntos.",
     steps: [
       {
         numeral: "I",
-        title: "Diagnóstico comercial",
+        title: "Análise e alinhamento",
         description:
-          "Mapeamento completo da situação atual: como a banca capta, converte e retém clientes. Identificação de gargalos e oportunidades imediatas.",
+          "Mapeamos a situação atual da banca — comercial, operacional e financeiro. Definimos juntos o modelo de parceria e os objetivos do primeiro ciclo.",
         deliverables: [
-          "Relatório de diagnóstico",
-          "Mapa de oportunidades",
-          "Benchmarks do setor",
+          "Diagnóstico completo",
+          "Modelo de parceria definido",
+          "Metas do primeiro trimestre",
         ],
       },
       {
         numeral: "II",
-        title: "Posicionamento e oferta",
+        title: "Estruturação da operação",
         description:
-          "Clareza sobre o que se vende, para quem, e com qual diferencial. Definição de proposta de valor e precificação adequada ao mercado.",
+          "Organizamos processos, funil de captação, ferramentas e papéis. Implantamos o que falta e ajustamos o que existe — sem parar a banca.",
         deliverables: [
-          "Proposta de valor documentada",
-          "Segmentação de público",
-          "Política de honorários",
+          "Processos documentados",
+          "Funil e CRM implantados",
+          "Time estruturado",
         ],
       },
       {
         numeral: "III",
-        title: "Processo e funil",
+        title: "Gestão ativa",
         description:
-          "Estrutura de captação, qualificação e fechamento adaptada à realidade jurídica e ao Código de Ética da OAB.",
+          "Assumimos a gestão comercial e operacional como parceiros. Acompanhamos indicadores, lideramos o time não-jurídico e reportamos aos sócios.",
         deliverables: [
-          "Funil comercial documentado",
-          "Scripts e roteiros de abordagem",
-          "Playbook de qualificação",
+          "Gestão semanal ativa",
+          "Relatórios mensais",
+          "Reuniões de alinhamento com sócios",
         ],
       },
       {
         numeral: "IV",
-        title: "Time e ferramentas",
+        title: "Crescimento e expansão",
         description:
-          "Definição de quem executa o comercial, com quais ferramentas e sob qual governança. Implantação de CRM adequado ao porte da banca.",
+          "Com a base organizada, aceleramos captação, aumentamos o ticket médio e preparamos a banca para crescer sem depender do tempo dos sócios.",
         deliverables: [
-          "Organograma comercial",
-          "CRM configurado",
-          "Treinamento do time",
+          "Metas de receita revisadas",
+          "Novos canais de captação",
+          "Plano de expansão",
         ],
       },
       {
         numeral: "V",
-        title: "Gestão e previsibilidade",
+        title: "Autonomia progressiva",
         description:
-          "Rituais de gestão, métricas e painel de controle para que os sócios acompanhem o comercial sem precisar executá-lo.",
+          "À medida que a operação amadurece, transferimos conhecimento e ferramentas para que a banca tenha independência — se e quando quiser.",
         deliverables: [
-          "Dashboard de métricas",
-          "Rituais de gestão (weekly/monthly)",
-          "Metas e OKRs comerciais",
+          "Playbooks internalizados",
+          "Time autônomo",
+          "Revisão do modelo de parceria",
         ],
       },
     ],
@@ -193,44 +193,49 @@ export const content = {
     headline: "Perguntas frequentes.",
     items: [
       {
-        question: "Quanto tempo dura um projeto completo?",
+        question: "O que exatamente vocês gerenciam?",
         answer:
-          "O ciclo completo varia entre 4 e 8 meses, dependendo do porte da banca e da complexidade do diagnóstico inicial. Projetos pontuais de posicionamento ou implantação de funil podem ser concluídos em 6 a 10 semanas.",
+          "Gerenciamos a área comercial e operacional da banca: captação de clientes, funil de vendas, time administrativo e de atendimento, processos internos e indicadores de resultado. Os sócios continuam responsáveis pela prática jurídica.",
+      },
+      {
+        question: "Como funciona o modelo de parceria?",
+        answer:
+          "O modelo é definido caso a caso, de acordo com o porte e o momento da banca. Pode envolver remuneração fixa, variável atrelada a resultado, ou uma combinação dos dois. Conversamos abertamente sobre isso na primeira reunião.",
       },
       {
         question: "Vocês trabalham com escritórios de qualquer porte?",
         answer:
-          "Atendemos bancas a partir de 2 sócios. O trabalho é mais impactante em escritórios que já têm carteira ativa mas enfrentam teto de crescimento — seja por falta de processo, de time ou de previsibilidade.",
+          "Atendemos bancas a partir de 2 sócios. O modelo de parceria é mais impactante em escritórios que já têm carteira ativa mas enfrentam teto de crescimento por falta de gestão dedicada.",
       },
       {
-        question: "Como funciona o diagnóstico gratuito?",
+        question: "Como é a primeira conversa?",
         answer:
-          "É uma reunião de 30 minutos sem compromisso. Fazemos perguntas objetivas sobre o modelo comercial atual, identificamos os principais gargalos e apresentamos um plano de ação inicial — independentemente de você contratar ou não.",
+          "É uma reunião de 30 minutos sem compromisso. Entendemos o momento da banca, apresentamos como o modelo de parceria funcionaria no seu caso e verificamos se faz sentido para os dois lados.",
       },
       {
-        question: "Vocês garantem resultado?",
+        question: "Os sócios perdem autonomia sobre o escritório?",
         answer:
-          "Não trabalhamos com garantias de número porque o resultado depende também da execução interna da banca. O que garantimos é um método validado, acompanhamento próximo e ajuste de rota quando necessário.",
+          "Não. Os sócios mantêm controle total sobre a estratégia jurídica e as decisões do escritório. Assumimos a gestão da operação comercial e administrativa, mas sempre alinhados e com reporte direto aos sócios.",
       },
       {
-        question: "Quais áreas do escritório são impactadas?",
+        question: "Quais áreas da banca são impactadas?",
         answer:
-          "O trabalho tem epicentro no comercial, mas impacta diretamente a gestão de pessoas (quem executa o comercial), financeiro (previsibilidade) e operação (tempo dos sócios). É uma mudança sistêmica, não apenas de marketing.",
+          "O foco é na gestão comercial e operacional: captação, atendimento, time administrativo, processos e indicadores. A área jurídica continua sob total responsabilidade dos sócios.",
       },
       {
-        question: "A metodologia respeita o Código de Ética da OAB?",
+        question: "A parceria respeita o Código de Ética da OAB?",
         answer:
-          "Sim. Todo o método é desenvolvido dentro das diretrizes do Provimento 205/2021 da OAB, que regula a publicidade e captação nos escritórios de advocacia. Nunca sugerimos práticas vedadas.",
+          "Sim. Todo o trabalho é desenvolvido dentro das diretrizes do Provimento 205/2021 da OAB, que regula publicidade e captação. Nunca sugerimos práticas vedadas pela regulação.",
       },
     ],
   },
 
   contact: {
     eyebrow: "Vamos Conversar",
-    headline: "Agende um diagnóstico gratuito de 30 minutos.",
+    headline: "Agende uma conversa de 30 minutos.",
     description:
-      "Sem compromisso. Vamos entender a realidade comercial da sua banca, identificar os principais gargalos e sair com um plano de ação claro — mesmo que você decida não contratar.",
-    submitLabel: "Solicitar diagnóstico",
+      "Sem compromisso. Vamos entender o momento da sua banca, apresentar como o modelo de parceria funcionaria no seu caso e verificar se faz sentido para os dois lados.",
+    submitLabel: "Quero ser parceiro",
     partnersSocietyOptions: [
       "1 sócio",
       "2 sócios",
@@ -242,78 +247,52 @@ export const content = {
 
   // Página de escritórios gerenciados
   firms: {
-    headline: "Escritórios sob gestão comercial.",
+    headline: "Escritórios sob nossa gestão.",
     subheadline:
-      "Bancas que escolheram estruturar o comercial com método e hoje operam com previsibilidade de receita.",
-    ctaLabel: "Quero fazer parte",
+      "Bancas que escolheram a parceria e hoje operam com gestão dedicada, previsibilidade de receita e sócios focados no direito.",
+    ctaLabel: "Quero ser parceiro",
     items: [
-      // [PERSONALIZAR] Dados reais dos escritórios gerenciados
       {
-        name: "[NOME DO ESCRITÓRIO 1]",
-        area: "[ÁREA DE ATUAÇÃO — ex: Direito Trabalhista]",
+        name: "Laquila Advogados",
+        area: "Direito Trabalhista",
         location: "[CIDADE, ESTADO]",
-        metric: "+X% receita",
-        metricLabel: "em 6 meses",
-        since: "[ANO DE INÍCIO]",
-        logo: "/images/firms/firma1.png",
+        metric: "1.674",
+        metricLabel: "contratos gerenciados em 30 dias",
+        since: "[ANO]",
+        logo: "/images/firms/laquila.jpg",
+        featured: true,
         description:
-          "[BREVE DESCRIÇÃO DO RESULTADO — 1 frase objetiva sobre o que mudou na banca]",
+          "Gestão completa de operação com 22+ vendedores simultâneos. Estruturação do funil, liderança de time e controle de resultado em escala.",
       },
       {
-        name: "[NOME DO ESCRITÓRIO 2]",
-        area: "[ÁREA DE ATUAÇÃO]",
+        name: "Gustavo Souza Advogados",
+        area: "Operações Comerciais",
         location: "[CIDADE, ESTADO]",
-        metric: "+X clientes",
-        metricLabel: "qualificados/mês",
+        metric: "Top 5",
+        metricLabel: "maior escritório do Brasil",
         since: "[ANO]",
-        logo: "/images/firms/firma2.png",
-        description: "[RESULTADO OBJETIVO]",
+        logo: "/images/firms/gustavo-souza.jpg",
+        featured: true,
+        description:
+          "Treinamento e estruturação de operações comerciais complexas em um dos maiores escritórios do país.",
       },
       {
-        name: "[NOME DO ESCRITÓRIO 3]",
+        name: "Molina Trindade Advogados",
         area: "[ÁREA DE ATUAÇÃO]",
         location: "[CIDADE, ESTADO]",
-        metric: "R$ X mil",
-        metricLabel: "ticket médio",
+        metric: "Parceiro",
+        metricLabel: "estratégico",
         since: "[ANO]",
-        logo: "/images/firms/firma3.png",
-        description: "[RESULTADO OBJETIVO]",
+        logo: "/images/firms/molina-trindade.jpg",
+        featured: false,
+        description: "[PERSONALIZAR — breve descrição da parceria]",
       },
-      {
-        name: "[NOME DO ESCRITÓRIO 4]",
-        area: "[ÁREA DE ATUAÇÃO]",
-        location: "[CIDADE, ESTADO]",
-        metric: "X meses",
-        metricLabel: "para previsibilidade",
-        since: "[ANO]",
-        logo: "/images/firms/firma4.png",
-        description: "[RESULTADO OBJETIVO]",
-      },
-      {
-        name: "[NOME DO ESCRITÓRIO 5]",
-        area: "[ÁREA DE ATUAÇÃO]",
-        location: "[CIDADE, ESTADO]",
-        metric: "+X%",
-        metricLabel: "conversão de leads",
-        since: "[ANO]",
-        logo: "/images/firms/firma5.png",
-        description: "[RESULTADO OBJETIVO]",
-      },
-      {
-        name: "[NOME DO ESCRITÓRIO 6]",
-        area: "[ÁREA DE ATUAÇÃO]",
-        location: "[CIDADE, ESTADO]",
-        metric: "X sócios",
-        metricLabel: "liberados do comercial",
-        since: "[ANO]",
-        logo: "/images/firms/firma6.png",
-        description: "[RESULTADO OBJETIVO]",
-      },
+      // [PERSONALIZAR] Adicionar demais escritórios parceiros aqui
     ],
   },
 
   footer: {
-    tagline: "Estruturação comercial para bancas jurídicas.",
+    tagline: "Parceria de gestão para bancas jurídicas.",
     cnpj: "[CNPJ XX.XXX.XXX/0001-XX]",
     nav: [
       { label: "Sobre", href: "/#sobre" },

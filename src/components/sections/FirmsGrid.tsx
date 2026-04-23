@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Calendar, TrendingUp } from "lucide-react";
+import { MapPin, Calendar, TrendingUp, Star } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { content } from "@/content";
 
 export function FirmsGrid() {
   const prof = content.professional;
-  const whatsappHref = `https://wa.me/${prof.whatsapp}?text=${encodeURIComponent("Olá, Marllon! Tenho interesse em fazer parte dos escritórios gerenciados.")}`;
+  const whatsappHref = `https://wa.me/${prof.whatsapp}?text=${encodeURIComponent("Olá, Marllon! Tenho interesse em uma parceria de gestão para o meu escritório.")}`;
 
   return (
     <>
@@ -41,58 +42,95 @@ export function FirmsGrid() {
       {/* Grid de escritórios */}
       <section className="py-20 md:py-28 bg-[var(--background)]">
         <div className="max-w-6xl mx-auto px-6 md:px-10">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-            {content.firms.items.map((firm, i) => (
-              <motion.div
-                key={i}
-                className="group p-6 border border-[var(--border)] rounded-sm hover:border-[var(--gold)] transition-colors bg-[var(--background)]"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: i * 0.07 }}
-              >
-                {/* Logo placeholder / nome */}
-                <div className="h-10 flex items-center mb-6">
-                  <p className="font-display text-base font-medium text-foreground group-hover:text-[var(--gold)] transition-colors">
-                    {firm.name}
-                  </p>
-                </div>
+          {/* Escritórios destaque */}
+          {content.firms.items.filter(f => f.featured).length > 0 && (
+            <div className="mb-6">
+              <p className="eyebrow mb-6 flex items-center gap-2">
+                <Star size={12} className="text-[var(--gold)]" />
+                Principais operações
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                {content.firms.items.filter(f => f.featured).map((firm, i) => (
+                  <motion.div
+                    key={i}
+                    className="group p-8 border border-[var(--gold)] rounded-sm bg-[var(--background)]"
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.1 }}
+                  >
+                    {/* Logo */}
+                    <div className="h-14 flex items-center mb-6">
+                      <div className="relative h-12 w-40">
+                        <Image
+                          src={firm.logo}
+                          alt={firm.name}
+                          fill
+                          className="object-contain object-left"
+                          sizes="160px"
+                        />
+                      </div>
+                    </div>
 
-                {/* Métrica de destaque */}
-                <div className="mb-6 p-4 bg-[var(--muted)] rounded-sm">
-                  <div className="flex items-end gap-2">
-                    <TrendingUp size={16} className="text-[var(--gold)] flex-shrink-0 mb-0.5" />
-                    <p className="font-display text-2xl text-[var(--gold)] leading-none">
-                      {firm.metric}
+                    {/* Métrica */}
+                    <div className="mb-6 p-4 bg-[var(--muted)] rounded-sm">
+                      <div className="flex items-end gap-2">
+                        <TrendingUp size={16} className="text-[var(--gold)] flex-shrink-0 mb-0.5" />
+                        <p className="font-display text-3xl text-[var(--gold)] leading-none">
+                          {firm.metric}
+                        </p>
+                      </div>
+                      <p className="text-xs text-[var(--muted-foreground)] mt-1 ml-6">
+                        {firm.metricLabel}
+                      </p>
+                    </div>
+
+                    <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mb-6">
+                      {firm.description}
                     </p>
-                  </div>
-                  <p className="text-xs text-[var(--muted-foreground)] mt-1 ml-6">
-                    {firm.metricLabel}
-                  </p>
-                </div>
 
-                {/* Descrição */}
-                <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mb-6">
-                  {firm.description}
-                </p>
+                    <div className="flex items-center gap-2 text-xs text-[var(--muted-foreground)] pt-4 border-t border-[var(--border)]">
+                      <span className="text-[var(--gold)] font-medium">Área</span>
+                      <span>{firm.area}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          )}
 
-                {/* Metadados */}
-                <div className="space-y-2 pt-4 border-t border-[var(--border)]">
-                  <div className="flex items-center gap-2 text-xs text-[var(--muted-foreground)]">
-                    <span className="text-[var(--gold)] text-xs font-medium">Área</span>
-                    <span>{firm.area}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[var(--muted-foreground)]">
-                    <MapPin size={12} className="text-[var(--gold)]" />
-                    <span>{firm.location}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[var(--muted-foreground)]">
-                    <Calendar size={12} className="text-[var(--gold)]" />
-                    <span>Desde {firm.since}</span>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          {/* Demais parceiros */}
+          {content.firms.items.filter(f => !f.featured).length > 0 && (
+            <div className="mb-20">
+              <p className="eyebrow mb-6">Escritórios parceiros</p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {content.firms.items.filter(f => !f.featured).map((firm, i) => (
+                  <motion.div
+                    key={i}
+                    className="group p-6 border border-[var(--border)] rounded-sm hover:border-[var(--gold)] transition-colors bg-[var(--background)]"
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.2 + i * 0.07 }}
+                  >
+                    <div className="h-12 flex items-center mb-4">
+                      <div className="relative h-10 w-32">
+                        <Image
+                          src={firm.logo}
+                          alt={firm.name}
+                          fill
+                          className="object-contain object-left"
+                          sizes="128px"
+                        />
+                      </div>
+                    </div>
+                    <p className="font-display text-sm font-medium text-foreground mb-1 group-hover:text-[var(--gold)] transition-colors">
+                      {firm.name}
+                    </p>
+                    <p className="text-xs text-[var(--muted-foreground)]">{firm.area}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* CTA — tornar-se parceiro */}
           <motion.div

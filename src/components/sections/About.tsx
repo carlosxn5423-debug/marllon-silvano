@@ -77,10 +77,10 @@ export function About() {
               </div>
               <div className="text-center p-4 border border-[var(--border)] rounded-sm">
                 <p className="font-display text-2xl md:text-3xl text-[var(--gold)] mb-1">
-                  {content.stats.firmsStructured}
+                  {content.stats.firmsManagedCount}
                 </p>
                 <p className="text-xs text-[var(--muted-foreground)] leading-tight">
-                  escritórios estruturados
+                  escritórios gerenciados
                 </p>
               </div>
               <div className="text-center p-4 border border-[var(--border)] rounded-sm">
