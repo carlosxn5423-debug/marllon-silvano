@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { TrendingUp, Star } from "lucide-react";
-import Image from "next/image";
 import { content } from "@/content";
 
 export function FirmsGrid() {
@@ -33,12 +32,12 @@ export function FirmsGrid() {
           </p>
         </motion.div>
 
-        {/* Escritórios destaque */}
+        {/* Operações de destaque */}
         {content.firms.items.filter(f => f.featured).length > 0 && (
           <div className="mb-10">
             <p className="eyebrow mb-6 flex items-center gap-2">
               <Star size={12} className="text-[var(--gold)]" />
-              Principais operações
+              Operações de destaque
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {content.firms.items.filter(f => f.featured).map((firm, i) => (
@@ -48,17 +47,13 @@ export function FirmsGrid() {
                   initial={{ opacity: 0, y: 8 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
+                  whileHover={{ y: -6, transition: { duration: 0.2, delay: 0 } }}
                 >
-                  <div className="h-12 flex items-center mb-5">
-                    <div className="relative h-10 w-36">
-                      <Image
-                        src={firm.logo}
-                        alt={firm.name}
-                        fill
-                        className="object-contain object-left"
-                        sizes="144px"
-                      />
-                    </div>
+                  {/* Nome do escritório */}
+                  <div className="mb-5 pb-4 border-b border-[var(--border)]">
+                    <p className="font-display text-lg font-medium text-foreground leading-tight">
+                      {firm.name}
+                    </p>
                   </div>
 
                   <div className="mb-5 p-3 bg-[var(--muted)] rounded-sm">
@@ -87,34 +82,28 @@ export function FirmsGrid() {
           </div>
         )}
 
-        {/* Parceiros */}
+        {/* Demais bancas */}
         {content.firms.items.filter(f => !f.featured).length > 0 && (
           <div>
-            <p className="eyebrow mb-6">Escritórios parceiros</p>
+            <p className="eyebrow mb-6">Demais bancas atendidas</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {content.firms.items.filter(f => !f.featured).map((firm, i) => (
                 <motion.div
                   key={i}
-                  className="group p-5 border border-[var(--border)] rounded-sm hover:border-[var(--gold)] transition-colors bg-[var(--background)]"
+                  className="group p-4 border border-[var(--border)] rounded-sm hover:border-[var(--gold)] transition-colors bg-[var(--background)] flex items-center gap-3"
                   initial={{ opacity: 0, y: 8 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.4, delay: 0.3 + i * 0.07 }}
                 >
-                  <div className="h-10 flex items-center mb-3">
-                    <div className="relative h-8 w-28">
-                      <Image
-                        src={firm.logo}
-                        alt={firm.name}
-                        fill
-                        className="object-contain object-left"
-                        sizes="112px"
-                      />
-                    </div>
+                  <div className="w-8 h-8 rounded-sm border border-[var(--gold)] flex-shrink-0 flex items-center justify-center">
+                    <span className="font-display text-sm text-[var(--gold)] leading-none">{firm.name.charAt(0)}</span>
                   </div>
-                  <p className="font-display text-sm font-medium text-foreground group-hover:text-[var(--gold)] transition-colors">
-                    {firm.name}
-                  </p>
-                  <p className="text-xs text-[var(--muted-foreground)] mt-0.5">{firm.area}</p>
+                  <div>
+                    <p className="font-display text-sm font-medium text-foreground group-hover:text-[var(--gold)] transition-colors">
+                      {firm.name}
+                    </p>
+                    <p className="text-xs text-[var(--muted-foreground)] mt-0.5">{firm.area}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>

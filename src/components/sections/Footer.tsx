@@ -17,14 +17,14 @@ export function Footer() {
             <p className="font-display text-lg text-[var(--background)] mb-3">
               {prof.name}
             </p>
-            <p className="text-sm text-[#555] leading-relaxed">
+            <p className="text-sm text-[#888] leading-relaxed">
               {content.footer.tagline}
             </p>
           </div>
 
           {/* Navegação */}
           <div>
-            <p className="text-xs text-[#555] uppercase tracking-widest mb-4">
+            <p className="text-xs text-[#888] uppercase tracking-widest mb-4">
               Navegação
             </p>
             <ul className="space-y-2">
@@ -43,7 +43,7 @@ export function Footer() {
 
           {/* Contato */}
           <div>
-            <p className="text-xs text-[#555] uppercase tracking-widest mb-4">
+            <p className="text-xs text-[#888] uppercase tracking-widest mb-4">
               Contato
             </p>
             <ul className="space-y-2">
@@ -81,7 +81,7 @@ export function Footer() {
 
         <div className="h-px bg-[#1a1a1a] mb-6" />
 
-        <div className="flex flex-col md:flex-row justify-between gap-2 text-xs text-[#444]">
+        <div className="flex flex-col md:flex-row justify-between gap-2 text-xs text-[#666]">
           <p>
             © {year} {prof.name}. Todos os direitos reservados.
           </p>

@@ -23,45 +23,52 @@ export function Method() {
         >
           <p className="eyebrow mb-4">{content.method.eyebrow}</p>
           <div className="gold-divider mb-6" />
-          <h2 className="font-display text-3xl md:text-4xl font-normal tracking-tight text-foreground max-w-2xl mx-auto">
+          <h2 className="font-display text-3xl md:text-4xl font-normal tracking-tight text-foreground max-w-2xl mx-auto mb-4">
             {content.method.headline}
           </h2>
+          {content.method.subheadline && (
+            <p className="text-[var(--muted-foreground)] text-base max-w-xl mx-auto leading-relaxed">
+              {content.method.subheadline}
+            </p>
+          )}
         </motion.div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6">
           {content.method.steps.map((step, i) => (
             <motion.div
               key={i}
-              className="flex gap-8 mb-10 last:mb-0"
-              initial={{ opacity: 0, x: -8 }}
-              animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="relative overflow-hidden p-8 border border-[var(--border)] rounded-sm bg-[var(--muted)] hover:border-[var(--gold)] transition-colors duration-300 group"
+              initial={{ opacity: 0, y: 12 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: i * 0.12 }}
+              whileHover={{ y: -6, transition: { duration: 0.2, delay: 0 } }}
             >
-              {/* Numeral + linha */}
-              <div className="flex flex-col items-center">
-                <span className="font-display text-xl text-[var(--gold)] font-medium w-8 text-center flex-shrink-0">
+              {/* Letra decorativa de fundo */}
+              <span className="absolute -top-4 right-4 font-display text-[9rem] text-[var(--gold)] opacity-[0.07] leading-none select-none pointer-events-none group-hover:opacity-[0.11] transition-opacity duration-300">
+                {step.numeral}
+              </span>
+
+              <div className="relative z-10">
+                {/* Letra do pilar */}
+                <span className="font-display text-5xl text-[var(--gold)] font-normal leading-none mb-5 block">
                   {step.numeral}
                 </span>
-                {i < content.method.steps.length - 1 && (
-                  <div className="flex-1 w-px bg-[var(--border)] mt-3" />
-                )}
-              </div>
 
-              {/* Conteúdo */}
-              <div className="pb-10 last:pb-0">
-                <h3 className="font-display text-xl font-medium text-foreground mb-2">
+                <h3 className="font-display text-2xl font-medium text-foreground mb-3">
                   {step.title}
                 </h3>
-                <p className="text-[var(--muted-foreground)] leading-relaxed text-base mb-4">
+
+                <p className="text-[var(--muted-foreground)] leading-relaxed text-sm mb-6">
                   {step.description}
                 </p>
-                <ul className="space-y-1">
+
+                <ul className="space-y-2 pt-4 border-t border-[var(--border)]">
                   {step.deliverables.map((d, j) => (
                     <li
                       key={j}
                       className="text-sm text-[var(--muted-foreground)] flex items-start gap-2"
                     >
-                      <span className="text-[var(--gold)] mt-1 flex-shrink-0">—</span>
+                      <span className="text-[var(--gold)] mt-0.5 flex-shrink-0">—</span>
                       {d}
                     </li>
                   ))}

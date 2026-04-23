@@ -50,7 +50,7 @@ export function ContactCTA() {
   return (
     <section
       id="contato"
-      className="py-20 md:py-28 bg-[var(--foreground)]"
+      className="py-20 md:py-28 bg-[#111111]"
       ref={ref}
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10">
@@ -62,7 +62,7 @@ export function ContactCTA() {
         >
           <p className="eyebrow mb-4">{content.contact.eyebrow}</p>
           <div className="gold-divider mb-6" />
-          <h2 className="font-display text-3xl md:text-4xl font-normal tracking-tight text-[var(--background)] max-w-2xl mx-auto">
+          <h2 className="font-display text-3xl md:text-4xl font-normal tracking-tight text-white max-w-2xl mx-auto">
             {content.contact.headline}
           </h2>
           <p className="text-[var(--muted-foreground)] mt-4 max-w-xl mx-auto leading-relaxed">
@@ -92,7 +92,7 @@ export function ContactCTA() {
                   <Input
                     {...register("name")}
                     placeholder="Seu nome completo"
-                    className="bg-[#1a1a1a] border-[#2a2a2a] text-[var(--background)] placeholder:text-[#555] focus:border-[var(--gold)] rounded-sm"
+                    className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#888] focus:border-[var(--gold)] rounded-sm"
                   />
                   {errors.name && (
                     <p className="text-xs text-red-400 mt-1">{errors.name.message}</p>
@@ -108,7 +108,7 @@ export function ContactCTA() {
                       {...register("email")}
                       type="email"
                       placeholder="seu@email.com"
-                      className="bg-[#1a1a1a] border-[#2a2a2a] text-[var(--background)] placeholder:text-[#555] focus:border-[var(--gold)] rounded-sm"
+                      className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#888] focus:border-[var(--gold)] rounded-sm"
                     />
                     {errors.email && (
                       <p className="text-xs text-red-400 mt-1">{errors.email.message}</p>
@@ -121,7 +121,7 @@ export function ContactCTA() {
                     <Input
                       {...register("whatsapp")}
                       placeholder="(11) 99999-9999"
-                      className="bg-[#1a1a1a] border-[#2a2a2a] text-[var(--background)] placeholder:text-[#555] focus:border-[var(--gold)] rounded-sm"
+                      className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#888] focus:border-[var(--gold)] rounded-sm"
                     />
                     {errors.whatsapp && (
                       <p className="text-xs text-red-400 mt-1">{errors.whatsapp.message}</p>
@@ -136,7 +136,7 @@ export function ContactCTA() {
                   <Input
                     {...register("firm")}
                     placeholder="Ex.: Silva & Associados"
-                    className="bg-[#1a1a1a] border-[#2a2a2a] text-[var(--background)] placeholder:text-[#555] focus:border-[var(--gold)] rounded-sm"
+                    className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#888] focus:border-[var(--gold)] rounded-sm"
                   />
                   {errors.firm && (
                     <p className="text-xs text-red-400 mt-1">{errors.firm.message}</p>
@@ -156,7 +156,7 @@ export function ContactCTA() {
                         <SelectItem
                           key={opt}
                           value={opt}
-                          className="text-[var(--background)] focus:bg-[#2a2a2a] focus:text-[var(--gold)]"
+                          className="text-white focus:bg-[#2a2a2a] focus:text-[var(--gold)]"
                         >
                           {opt}
                         </SelectItem>
@@ -176,7 +176,7 @@ export function ContactCTA() {
                     {...register("message")}
                     placeholder="Conte brevemente o principal desafio comercial da banca..."
                     rows={3}
-                    className="bg-[#1a1a1a] border-[#2a2a2a] text-[var(--background)] placeholder:text-[#555] focus:border-[var(--gold)] rounded-sm resize-none"
+                    className="bg-[#1a1a1a] border-[#2a2a2a] text-white placeholder:text-[#888] focus:border-[var(--gold)] rounded-sm resize-none"
                   />
                 </div>
 
@@ -188,7 +188,7 @@ export function ContactCTA() {
                   {isSubmitting ? "Enviando..." : content.contact.submitLabel}
                 </button>
 
-                <p className="text-xs text-[#555] text-center">
+                <p className="text-xs text-[#888] text-center">
                   Sem compromisso · 30 minutos · Gratuito
                 </p>
               </form>
@@ -210,8 +210,8 @@ export function ContactCTA() {
             >
               <Phone size={18} className="text-[var(--gold)] flex-shrink-0" />
               <div>
-                <p className="text-xs text-[#555] mb-0.5">WhatsApp</p>
-                <p className="text-sm text-[var(--background)] group-hover:text-[var(--gold)] transition-colors">
+                <p className="text-xs text-[#888] mb-0.5">WhatsApp</p>
+                <p className="text-sm text-white group-hover:text-[var(--gold)] transition-colors">
                   Conversa direta
                 </p>
               </div>
@@ -223,24 +223,9 @@ export function ContactCTA() {
             >
               <Mail size={18} className="text-[var(--gold)] flex-shrink-0" />
               <div>
-                <p className="text-xs text-[#555] mb-0.5">E-mail</p>
-                <p className="text-sm text-[var(--background)] group-hover:text-[var(--gold)] transition-colors">
+                <p className="text-xs text-[#888] mb-0.5">E-mail</p>
+                <p className="text-sm text-white group-hover:text-[var(--gold)] transition-colors">
                   {prof.email}
-                </p>
-              </div>
-            </a>
-
-            <a
-              href={prof.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 p-4 border border-[#2a2a2a] rounded-sm hover:border-[var(--gold)] group transition-colors"
-            >
-              <Link2 size={18} className="text-[var(--gold)] flex-shrink-0" />
-              <div>
-                <p className="text-xs text-[#555] mb-0.5">LinkedIn</p>
-                <p className="text-sm text-[var(--background)] group-hover:text-[var(--gold)] transition-colors">
-                  Marllon Silvano
                 </p>
               </div>
             </a>
@@ -253,8 +238,8 @@ export function ContactCTA() {
             >
               <Camera size={18} className="text-[var(--gold)] flex-shrink-0" />
               <div>
-                <p className="text-xs text-[#555] mb-0.5">Instagram</p>
-                <p className="text-sm text-[var(--background)] group-hover:text-[var(--gold)] transition-colors">
+                <p className="text-xs text-[#888] mb-0.5">Instagram</p>
+                <p className="text-sm text-white group-hover:text-[var(--gold)] transition-colors">
                   @marllonsilvano
                 </p>
               </div>

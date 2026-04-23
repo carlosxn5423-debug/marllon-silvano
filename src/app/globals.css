@@ -28,28 +28,28 @@
 }
 
 :root {
-  --background: #FAFAF8;
-  --foreground: #0E0E0E;
-  --card: #FFFFFF;
-  --card-foreground: #0E0E0E;
-  --muted: #F2F1ED;
-  --muted-foreground: #6B6B6B;
-  --border: #E5E3DD;
+  --background: #0a0a0a;
+  --foreground: #F0EDE8;
+  --card: #111111;
+  --card-foreground: #F0EDE8;
+  --muted: #141414;
+  --muted-foreground: #888888;
+  --border: #252525;
   --gold: #B8935A;
   --gold-soft: #D4B07C;
   --gold-deep: #8A6B3F;
-  --primary: #0E0E0E;
-  --primary-foreground: #FAFAF8;
-  --input: #E5E3DD;
+  --primary: #F0EDE8;
+  --primary-foreground: #0a0a0a;
+  --input: #252525;
   --ring: #B8935A;
   --destructive: oklch(0.577 0.245 27.325);
   --radius: 0.25rem;
-  --popover: #FAFAF8;
-  --popover-foreground: #0E0E0E;
-  --secondary: #F2F1ED;
-  --secondary-foreground: #0E0E0E;
-  --accent: #F2F1ED;
-  --accent-foreground: #0E0E0E;
+  --popover: #111111;
+  --popover-foreground: #F0EDE8;
+  --secondary: #141414;
+  --secondary-foreground: #F0EDE8;
+  --accent: #141414;
+  --accent-foreground: #F0EDE8;
 }
 
 @layer base {
@@ -99,4 +99,24 @@
 *:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 2px;
+}
+
+/* Grain texture sutil para profundidade */
+.grain-overlay {
+  position: relative;
+}
+.grain-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+}
+.grain-overlay > * {
+  position: relative;
+  z-index: 2;
 }

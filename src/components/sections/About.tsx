@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { content } from "@/content";
 
@@ -11,9 +10,8 @@ export function About() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="sobre" className="py-20 md:py-28 bg-[var(--background)]" ref={ref}>
+    <section id="sobre" className="py-20 md:py-28 bg-[var(--background)] grain-overlay" ref={ref}>
       <div className="max-w-6xl mx-auto px-6 md:px-10">
-        {/* Eyebrow + divider */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0 }}
@@ -25,21 +23,34 @@ export function About() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Foto */}
+          {/* Duas fotos complementares */}
           <motion.div
-            className="photo-frame relative mx-auto w-full max-w-xs"
+            className="w-full max-w-sm mx-auto"
             initial={{ opacity: 0, x: -8 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <div className="aspect-square relative rounded-sm overflow-hidden border border-[var(--border)]">
-              <Image
-                src={content.professional.photoAbout}
-                alt={`${content.professional.name} — ambiente de trabalho`}
-                fill
-                className="object-cover grayscale"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+            <div className="flex flex-col gap-4">
+              {/* Studio2 — fundo removido, flutua no dark */}
+              <div className="aspect-[3/4] relative">
+                <Image
+                  src={content.professional.photoAbout}
+                  alt={`${content.professional.name}`}
+                  fill
+                  className="object-contain object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              {/* Palco — fundo removido, autoridade */}
+              <div className="aspect-[4/3] relative">
+                <Image
+                  src={(content.professional as Record<string, string>).photoAbout2}
+                  alt={`${content.professional.name} — palestrante`}
+                  fill
+                  className="object-contain object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </motion.div>
 

@@ -1,9 +1,62 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import Image from "next/image";
 import { content } from "@/content";
+
+function CountUp({ target, suffix = "", prefix = "", duration = 1800 }: {
+  target: number;
+  suffix?: string;
+  prefix?: string;
+  duration?: number;
+}) {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (!inView) return;
+    let startTime: number | null = null;
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * target));
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
+  }, [inView, target, duration]);
+
+  return (
+    <span ref={ref}>
+      {prefix}{count >= 1000 ? count.toLocaleString("pt-BR") : count}{suffix}
+    </span>
+  );
+}
+
+const outcomes = [
+  {
+    metric: "1.674",
+    metricNum: 1674,
+    metricSuffix: "",
+    label: "contratos gerenciados em 30 dias",
+    context: "Laquila Advogados — operação com 22+ vendedores simultâneos",
+  },
+  {
+    metric: "2×",
+    metricNum: 2,
+    metricSuffix: "×",
+    label: "contratos dobrados em menos de 1 mês",
+    context: "Carlos Cruz Advocacia — mesmo investimento em tráfego, resultado dobrado",
+  },
+  {
+    metric: "Top 5",
+    metricNum: null,
+    metricSuffix: "",
+    label: "maior escritório trabalhista do Brasil",
+    context: "Gustavo Souza Advogados — estruturação de operações comerciais complexas",
+  },
+];
 
 export function Results() {
   const ref = useRef(null);
@@ -29,41 +82,52 @@ export function Results() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {content.results.testimonials.map((t, i) => (
+        {/* Stats com contador animado */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          {[
+            { target: 12, suffix: "", label: "anos em vendas jurídicas", size: "text-3xl md:text-4xl" },
+            { target: 23, prefix: "R$", suffix: "M+", label: "em contratos gerados", size: "text-2xl md:text-3xl" },
+            { target: 200, suffix: "+", label: "advogados treinados", size: "text-3xl md:text-4xl" },
+            { target: 14, prefix: "+", suffix: "", label: "comerciais implementados", size: "text-3xl md:text-4xl" },
+          ].map((stat, i) => (
             <motion.div
               key={i}
-              className="relative p-8 bg-[var(--background)] border border-[var(--border)] rounded-sm hover:border-[var(--gold)] transition-colors"
+              className="text-center p-6 bg-[var(--background)] border border-[var(--border)] rounded-sm"
               initial={{ opacity: 0, y: 8 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
+              transition={{ duration: 0.4, delay: i * 0.08 }}
+              whileHover={{ y: -4, transition: { duration: 0.2, delay: 0 } }}
             >
-              {/* Aspas decorativas */}
-              <span className="absolute top-6 left-8 font-display text-5xl text-[var(--gold)] opacity-40 leading-none select-none">
-                "
-              </span>
-
-              <p className="font-display text-lg font-normal text-foreground leading-snug mb-6 pt-4">
-                {t.quote}
+              <p className={`font-display ${stat.size} text-[var(--gold)] mb-2`}>
+                <CountUp target={stat.target} suffix={stat.suffix} prefix={stat.prefix} />
               </p>
+              <p className="text-xs text-[var(--muted-foreground)] leading-tight">{stat.label}</p>
+            </motion.div>
+          ))}
+        </div>
 
-              <div className="flex items-center gap-3 pt-4 border-t border-[var(--border)]">
-                <div className="w-10 h-10 rounded-full overflow-hidden bg-[var(--muted)] flex-shrink-0 border border-[var(--border)]">
-                  <Image
-                    src={t.photo}
-                    alt={t.name}
-                    width={40}
-                    height={40}
-                    className="object-cover grayscale"
-                  />
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-foreground">{t.name}</p>
-                  <p className="text-xs text-[var(--muted-foreground)]">
-                    {t.role} · {t.firm}
-                  </p>
-                </div>
-              </div>
+        {/* Casos reais */}
+        <div className="grid md:grid-cols-3 gap-6">
+          {outcomes.map((item, i) => (
+            <motion.div
+              key={i}
+              className="p-8 bg-[var(--background)] border border-[var(--border)] rounded-sm hover:border-[var(--gold)] transition-colors"
+              initial={{ opacity: 0, y: 8 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
+              whileHover={{ y: -6, transition: { duration: 0.2, delay: 0 } }}
+            >
+              <p className="font-display text-4xl md:text-5xl text-[var(--gold)] mb-2 leading-none">
+                {item.metricNum !== null ? (
+                  <CountUp target={item.metricNum} suffix={item.metricSuffix} duration={1200} />
+                ) : (
+                  item.metric
+                )}
+              </p>
+              <p className="text-sm font-medium text-foreground mb-3">{item.label}</p>
+              <p className="text-xs text-[var(--muted-foreground)] leading-relaxed pt-3 border-t border-[var(--border)]">
+                {item.context}
+              </p>
             </motion.div>
           ))}
         </div>

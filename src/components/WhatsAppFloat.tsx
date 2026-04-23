@@ -5,7 +5,7 @@ import { content } from "@/content";
 
 export function WhatsAppFloat() {
   const prof = content.professional;
-  const href = `https://wa.me/${prof.whatsapp}?text=${encodeURIComponent("Olá, Marllon! Tenho interesse em conversar sobre uma parceria de gestão para o meu escritório.")}`;
+  const href = `https://wa.me/${prof.whatsapp}?text=${encodeURIComponent(prof.whatsappMessage)}`;
 
   return (
     <a

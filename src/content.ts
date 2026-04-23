@@ -1,14 +1,14 @@
 export const content = {
   professional: {
     name: "Marllon Silvano",
-    // [PERSONALIZAR] Título/especialidade
-    title: "Parceiro de Gestão para Escritórios de Advocacia",
+    title: "Engenharia Comercial para Escritórios de Advocacia",
     // [PERSONALIZAR] Caminhos das fotos (colocar em /public/images/)
-    photoHero: "/images/responsavel.jpg",
-    photoAbout: "/images/responsavel-working.jpg",
+    photoHero: "/images/hero-studio.png",
+    photoAbout: "/images/marllon-studio2.png",
+    photoAbout2: "/images/marllon-palco2.jpg",
     // [PERSONALIZAR] Links de contato
     whatsapp: "5541988203774", // ex: 5511999999999
-    whatsappMessage: "Olá, Marllon!",
+    whatsappMessage: "Olá, Marllon! Tenho interesse em conversar sobre uma parceria de gestão para o meu escritório.",
     email: "contato@marllonsilvano.com",
     linkedin: "",
     instagram: "https://instagram.com/MarlloHr",
@@ -22,18 +22,18 @@ export const content = {
   },
 
   hero: {
-    eyebrow: "Parceria de Gestão",
+    eyebrow: "Engenharia Comercial Jurídica",
     headline:
-      "Implemento o comercial no seu escritório. Você foca no direito.",
+      "Implementamos o comercial no seu escritório. Você pratica direito.",
     subheadline:
-      "12 anos de experiência em vendas jurídicas — estruturo funil, treino time e assumo a gestão comercial da sua banca para gerar contratos com previsibilidade e recorrência.",
+      "Marllon Silvano e equipe estruturam o funil, treinam o time comercial e assumem a gestão da captação da sua banca — com o Método L.E.I. e foco em contratos recorrentes desde o primeiro ciclo.",
     ctaPrimary: "Quero ser parceiro",
     ctaSecondary: "Como funciona",
     socialProof: "R$23M+ em contratos gerados · 200+ advogados treinados · +14 comerciais implementados",
   },
 
   credibility: {
-    label: "Escritórios parceiros",
+    label: "Bancas sob gestão",
     logos: [
       { name: "Laquila Advogados", src: "/images/firms/laquila.jpg" },
       { name: "Gustavo Souza", src: "/images/firms/gustavo-souza.jpg" },
@@ -45,19 +45,19 @@ export const content = {
   about: {
     eyebrow: "I — Sobre",
     headline:
-      "12 anos construindo operações comerciais dentro de escritórios de advocacia.",
+      "Marllon Silvano: quem está na operação, não na consultoria.",
     paragraphs: [
-      "Graduado em Direito com especialização em Gestão Comercial. Em 2023, iniciei minha atuação em um dos maiores escritórios trabalhistas do Brasil — primeiro como vendedor jurídico, depois assumindo a gestão da operação comercial com média de 1.500 contratos fechados por mês.",
-      "Desde então, implementei mais de 14 operações comerciais em escritórios de diferentes portes e áreas. Não entrego um plano e vou embora: fico na operação, treino o time, acompanho os indicadores e ajusto a rota junto com você.",
-      "O resultado é previsibilidade. Fechamento de contratos deixa de ser acidente e vira rotina.",
+      "Formado em Direito pela UniRasil (Curitiba), pós-graduado em Gestão Comercial e Vendas. Antes de ser o responsável pela Engenharia Comercial de bancas jurídicas, sou marido e pai — e é dessa base que veio o propósito: devolver tempo e previsibilidade para advogados que escolheram o direito, não a operação de vendas.",
+      "Em 2023, assumi a gestão comercial de um dos maiores escritórios trabalhistas do Brasil — média de 1.500 contratos fechados por mês, equipe de 22+ vendedores sob nossa liderança. Desde então, implementamos mais de 14 operações comerciais em bancas de diferentes portes e áreas do direito.",
+      "Não entregamos diagnóstico e vamos embora. Entramos na operação, treinamos LDRs, SDRs e closers, estruturamos funil com POP e scripts testados, implantamos CRM, definimos OKRs e acompanhamos KPIs semanalmente. A metodologia é o Método L.E.I. — proprietária, criada para o mercado jurídico.",
     ],
     quote:
-      '"Fechamento de contratos precisa ser rotina, não sorte."',
+      '"Seu escritório não precisa de sorte. Precisa de Engenharia Comercial."',
   },
 
   pains: {
     eyebrow: "II — Cenário",
-    headline: "Se você reconhece estes cenários, podemos ser parceiros.",
+    headline: "Sua banca ainda depende de você para crescer?",
     items: [
       {
         title: "Receita imprevisível",
@@ -87,62 +87,42 @@ export const content = {
   },
 
   method: {
-    eyebrow: "III — Como funciona",
-    headline: "Entramos como parceiros. Gerenciamos. Crescemos juntos.",
+    eyebrow: "III — O Método L.E.I.",
+    headline: "Liberdade. Estratégia. Inteligência.",
+    subheadline:
+      "Metodologia proprietária desenvolvida por Marllon Silvano para o mercado jurídico. Três pilares que tiram a operação comercial das costas do sócio e colocam resultados no funil.",
     steps: [
       {
+        numeral: "L",
+        title: "Liberdade",
+        description:
+          "Descentralizamos o atendimento para tirar a sobrecarga operacional das suas costas. Você volta a ter tempo para a estratégia jurídica — e para a sua vida — enquanto a equipe comercial qualifica e fecha contratos.",
+        deliverables: [
+          "Time de LDRs, SDRs e closers estruturado",
+          "Gestão humana e rotina diária implantadas",
+          "Sócios fora da operação de vendas",
+        ],
+      },
+      {
+        numeral: "E",
+        title: "Estratégia",
+        description:
+          "Fim da adivinhação. Estruturamos processos exatos, Procedimento Operacional Padrão (POP), réguas de follow-up, scripts de alta conversão e matrizes de quebra de objeções focadas nas dores do reclamante trabalhista.",
+        deliverables: [
+          "POP e scripts de conversão",
+          "Réguas de follow-up automatizadas",
+          "Matriz de objeções documentada",
+        ],
+      },
+      {
         numeral: "I",
-        title: "Análise e alinhamento",
+        title: "Inteligência",
         description:
-          "Mapeamos a situação atual da banca — comercial, operacional e financeiro. Definimos juntos o modelo de parceria e os objetivos do primeiro ciclo.",
+          "Decisões baseadas em dados. Implantamos CRM, definimos OKRs e analisamos KPIs comerciais. Alinhamos constantemente com a equipe de tráfego para reduzir CPL e CAC sem abrir mão da qualidade dos leads.",
         deliverables: [
-          "Diagnóstico completo",
-          "Modelo de parceria definido",
-          "Metas do primeiro trimestre",
-        ],
-      },
-      {
-        numeral: "II",
-        title: "Estruturação da operação",
-        description:
-          "Organizamos processos, funil de captação, ferramentas e papéis. Implantamos o que falta e ajustamos o que existe — sem parar a banca.",
-        deliverables: [
-          "Processos documentados",
-          "Funil e CRM implantados",
-          "Time estruturado",
-        ],
-      },
-      {
-        numeral: "III",
-        title: "Gestão ativa",
-        description:
-          "Assumimos a gestão comercial e operacional como parceiros. Acompanhamos indicadores, lideramos o time não-jurídico e reportamos aos sócios.",
-        deliverables: [
-          "Gestão semanal ativa",
-          "Relatórios mensais",
-          "Reuniões de alinhamento com sócios",
-        ],
-      },
-      {
-        numeral: "IV",
-        title: "Crescimento e expansão",
-        description:
-          "Com a base organizada, aceleramos captação, aumentamos o ticket médio e preparamos a banca para crescer sem depender do tempo dos sócios.",
-        deliverables: [
-          "Metas de receita revisadas",
-          "Novos canais de captação",
-          "Plano de expansão",
-        ],
-      },
-      {
-        numeral: "V",
-        title: "Autonomia progressiva",
-        description:
-          "À medida que a operação amadurece, transferimos conhecimento e ferramentas para que a banca tenha independência — se e quando quiser.",
-        deliverables: [
-          "Playbooks internalizados",
-          "Time autônomo",
-          "Revisão do modelo de parceria",
+          "CRM implantado e configurado",
+          "OKRs e KPIs comerciais definidos",
+          "Alinhamento com gestão de tráfego",
         ],
       },
     ],
@@ -150,35 +130,7 @@ export const content = {
 
   results: {
     eyebrow: "IV — Resultados",
-    headline: "O que muda na prática.",
-    testimonials: [
-      {
-        quote:
-          // [PERSONALIZAR] Depoimento real
-          '"[DEPOIMENTO DO CLIENTE 1 — descreva a transformação, em primeira pessoa, sem superlativos vazios]"',
-        name: "[NOME DO SÓCIO]",
-        role: "[CARGO]",
-        firm: "[NOME DO ESCRITÓRIO]",
-        // [PERSONALIZAR] Foto circular: /public/images/testimonials/cliente1.jpg
-        photo: "/images/testimonials/cliente1.jpg",
-      },
-      {
-        quote:
-          '"[DEPOIMENTO DO CLIENTE 2 — foque em resultado específico: receita, processo, autonomia dos sócios]"',
-        name: "[NOME DO SÓCIO]",
-        role: "[CARGO]",
-        firm: "[NOME DO ESCRITÓRIO]",
-        photo: "/images/testimonials/cliente2.jpg",
-      },
-      {
-        quote:
-          '"[DEPOIMENTO DO CLIENTE 3 — idealmente de área jurídica diferente dos outros dois]"',
-        name: "[NOME DO SÓCIO]",
-        role: "[CARGO]",
-        firm: "[NOME DO ESCRITÓRIO]",
-        photo: "/images/testimonials/cliente3.jpg",
-      },
-    ],
+    headline: "Números de operações reais.",
   },
 
   faq: {
@@ -225,9 +177,9 @@ export const content = {
 
   contact: {
     eyebrow: "Vamos Conversar",
-    headline: "Agende uma conversa de 30 minutos.",
+    headline: "30 minutos para entender se faz sentido.",
     description:
-      "Sem compromisso. Vamos entender o momento da sua banca, apresentar como o modelo de parceria funcionaria no seu caso e verificar se faz sentido para os dois lados.",
+      "Sem compromisso. Analisamos o momento da sua banca, apresentamos como o Método L.E.I. funcionaria no seu caso e definimos se a parceria faz sentido para os dois lados.",
     submitLabel: "Quero ser parceiro",
     partnersSocietyOptions: [
       "1 sócio",
@@ -240,9 +192,9 @@ export const content = {
 
   // Página de escritórios gerenciados
   firms: {
-    headline: "Escritórios sob nossa gestão.",
+    headline: "Bancas onde já entramos e entregamos.",
     subheadline:
-      "Bancas que escolheram a parceria e hoje operam com gestão dedicada, previsibilidade de receita e sócios focados no direito.",
+      "Escritórios que confiaram na parceria e saíram com operação estruturada, time treinado e contratos recorrentes. Ativos ou não, os processos ficaram.",
     ctaLabel: "Quero ser parceiro",
     items: [
       {

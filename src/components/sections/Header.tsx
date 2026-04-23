@@ -31,7 +31,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md bg-[#FAFAF8]/90 border-b border-[var(--border)]"
+          ? "backdrop-blur-md bg-[#080808]/90 border-b border-[var(--border)]"
           : "bg-transparent"
       }`}
     >
@@ -66,7 +66,7 @@ export function Header() {
           href={whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center px-4 py-2 text-sm border border-[var(--gold)] text-foreground hover:bg-[var(--gold-deep)] hover:text-white hover:border-[var(--gold-deep)] transition-colors rounded-sm"
+          className="hidden md:inline-flex items-center px-4 py-2 text-sm border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[#080808] hover:border-[var(--gold)] transition-colors rounded-sm"
         >
           Agendar diagnóstico
         </a>
@@ -83,7 +83,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#FAFAF8] border-t border-[var(--border)] px-6 py-6 flex flex-col gap-4">
+        <div className="md:hidden bg-[#080808] border-t border-[var(--border)] px-6 py-6 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
