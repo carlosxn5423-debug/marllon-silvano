@@ -15,51 +15,44 @@ export const content = {
   },
 
   stats: {
-    // [PERSONALIZAR] Números reais
-    yearsInSector: "+8",
-    firmsManagedCount: "+40",
-    revenueGrowth: "+35%",
+    yearsExperience: "12",
+    contractsValue: "R$23M+",
+    lawyersTrained: "200+",
+    commercialsImplemented: "+14",
   },
 
   hero: {
     eyebrow: "Parceria de Gestão",
     headline:
-      "Gerenciamos escritórios de advocacia para que os sócios foquem no que sabem fazer melhor: o direito.",
+      "Implemento o comercial no seu escritório. Você foca no direito.",
     subheadline:
-      "Assumimos a gestão comercial e operacional da sua banca como parceiros — captação, processos, time e previsibilidade de receita — dentro das normas da OAB.",
+      "12 anos de experiência em vendas jurídicas — estruturo funil, treino time e assumo a gestão comercial da sua banca para gerar contratos com previsibilidade e recorrência.",
     ctaPrimary: "Quero ser parceiro",
     ctaSecondary: "Como funciona",
-    // [PERSONALIZAR] Prova social
-    socialProof: "+40 escritórios gerenciados · +8 anos no setor jurídico",
+    socialProof: "R$23M+ em contratos gerados · 200+ advogados treinados · +14 comerciais implementados",
   },
 
   credibility: {
-    label: "Referências e formações",
-    // [PERSONALIZAR] Logos: colocar em /public/images/logos/ e referenciar aqui
+    label: "Escritórios parceiros",
     logos: [
-      { name: "OAB", src: "/images/logos/oab.png" },
-      { name: "FGV", src: "/images/logos/fgv.png" },
-      { name: "Instituição 3", src: "/images/logos/inst3.png" },
-      { name: "Instituição 4", src: "/images/logos/inst4.png" },
-      { name: "Instituição 5", src: "/images/logos/inst5.png" },
+      { name: "Laquila Advogados", src: "/images/firms/laquila.jpg" },
+      { name: "Gustavo Souza", src: "/images/firms/gustavo-souza.jpg" },
+      { name: "Molina Trindade", src: "/images/firms/molina-trindade.jpg" },
+      { name: "Carlos Cruz", src: "/images/firms/carlos-cruz.png" },
     ],
   },
 
   about: {
     eyebrow: "I — Sobre",
     headline:
-      "Uma parceria real: entramos na operação, assumimos a gestão e crescemos juntos.",
+      "12 anos construindo operações comerciais dentro de escritórios de advocacia.",
     paragraphs: [
-      // [PERSONALIZAR] Formação acadêmica
-      "Graduado em [CURSO] pela [INSTITUIÇÃO], com MBA em Gestão e Marketing Jurídico. Formação construída para entender tanto a lógica da prática jurídica quanto as exigências de um negócio de alta performance.",
-      // [PERSONALIZAR] Trajetória
-      "Mais de oito anos gerenciando bancas jurídicas de diferentes portes e áreas de atuação — do escritório boutique ao regional com múltiplos sócios. Não vendemos consultoria e saímos: entramos como parceiros e ficamos.",
-      // [PERSONALIZAR] Especialização
-      "O modelo de parceria existe porque o problema não é falta de conhecimento jurídico — é falta de tempo, estrutura e pessoas dedicadas ao negócio. É isso que trazemos para dentro da banca.",
+      "Graduado em Direito com especialização em Gestão Comercial. Em 2023, iniciei minha atuação em um dos maiores escritórios trabalhistas do Brasil — primeiro como vendedor jurídico, depois assumindo a gestão da operação comercial com média de 1.500 contratos fechados por mês.",
+      "Desde então, implementei mais de 14 operações comerciais em escritórios de diferentes portes e áreas. Não entrego um plano e vou embora: fico na operação, treino o time, acompanho os indicadores e ajusto a rota junto com você.",
+      "O resultado é previsibilidade. Fechamento de contratos deixa de ser acidente e vira rotina.",
     ],
-    // [PERSONALIZAR] Frase de destaque
     quote:
-      '"Advogado bom praticando direito vale mais do que advogado bom perdendo tempo em gestão."',
+      '"Fechamento de contratos precisa ser rotina, não sorte."',
   },
 
   pains: {
@@ -275,6 +268,18 @@ export const content = {
         featured: true,
         description:
           "Treinamento e estruturação de operações comerciais complexas em um dos maiores escritórios do país.",
+      },
+      {
+        name: "Carlos Cruz Advocacia",
+        area: "Direito Trabalhista",
+        location: "[CIDADE, ESTADO]",
+        metric: "2×",
+        metricLabel: "contratos em menos de 1 mês",
+        since: "[ANO]",
+        logo: "/images/firms/carlos-cruz.png",
+        featured: true,
+        description:
+          "Contratos dobrados em menos de um mês com o mesmo valor de investimento já existente na operação.",
       },
       {
         name: "Molina Trindade Advogados",

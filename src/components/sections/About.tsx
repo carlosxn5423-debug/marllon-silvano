@@ -66,29 +66,37 @@ export function About() {
             </blockquote>
 
             {/* Stats cards */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center p-4 border border-[var(--border)] rounded-sm">
                 <p className="font-display text-2xl md:text-3xl text-[var(--gold)] mb-1">
-                  {content.stats.yearsInSector}
+                  {content.stats.yearsExperience}
                 </p>
                 <p className="text-xs text-[var(--muted-foreground)] leading-tight">
-                  anos no setor jurídico
+                  anos em vendas jurídicas
+                </p>
+              </div>
+              <div className="text-center p-4 border border-[var(--border)] rounded-sm">
+                <p className="font-display text-xl md:text-2xl text-[var(--gold)] mb-1">
+                  {content.stats.contractsValue}
+                </p>
+                <p className="text-xs text-[var(--muted-foreground)] leading-tight">
+                  em contratos gerados
                 </p>
               </div>
               <div className="text-center p-4 border border-[var(--border)] rounded-sm">
                 <p className="font-display text-2xl md:text-3xl text-[var(--gold)] mb-1">
-                  {content.stats.firmsManagedCount}
+                  {content.stats.lawyersTrained}
                 </p>
                 <p className="text-xs text-[var(--muted-foreground)] leading-tight">
-                  escritórios gerenciados
+                  advogados treinados
                 </p>
               </div>
               <div className="text-center p-4 border border-[var(--border)] rounded-sm">
                 <p className="font-display text-2xl md:text-3xl text-[var(--gold)] mb-1">
-                  {content.stats.revenueGrowth}
+                  {content.stats.commercialsImplemented}
                 </p>
                 <p className="text-xs text-[var(--muted-foreground)] leading-tight">
-                  crescimento médio em receita
+                  comerciais implementados
                 </p>
               </div>
             </div>
