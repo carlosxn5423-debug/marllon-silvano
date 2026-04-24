@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Mail, Phone, Instagram } from "lucide-react";
+import { Mail, Phone, AtSign } from "lucide-react";
 import { content } from "@/content";
 
 export function ContactCTA() {
@@ -28,7 +28,7 @@ export function ContactCTA() {
       primary: false,
     },
     {
-      icon: Instagram,
+      icon: AtSign,
       label: "Instagram",
       value: "@marllonhr",
       href: prof.instagram,
