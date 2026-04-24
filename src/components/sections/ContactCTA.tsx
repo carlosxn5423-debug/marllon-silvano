@@ -2,8 +2,28 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Mail, Phone, AtSign } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { content } from "@/content";
+
+function InstagramIcon({ size = 20, className = "" }: { size?: number; className?: string }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
 
 export function ContactCTA() {
   const ref = useRef(null);
@@ -11,31 +31,6 @@ export function ContactCTA() {
 
   const prof = content.professional;
   const whatsappHref = `https://wa.me/${prof.whatsapp}?text=${encodeURIComponent(prof.whatsappMessage)}`;
-
-  const channels = [
-    {
-      icon: Phone,
-      label: "WhatsApp",
-      value: "Conversa direta",
-      href: whatsappHref,
-      primary: true,
-    },
-    {
-      icon: Mail,
-      label: "E-mail",
-      value: prof.email,
-      href: `mailto:${prof.email}`,
-      primary: false,
-    },
-    {
-      icon: AtSign,
-      label: "Instagram",
-      value: "@marllonhr",
-      href: prof.instagram,
-      primary: false,
-      external: true,
-    },
-  ];
 
   return (
     <section id="contato" className="py-20 md:py-28 bg-[#111111]" ref={ref}>
@@ -62,53 +57,52 @@ export function ContactCTA() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          {channels.map((ch, i) => (
-            <a
-              key={i}
-              href={ch.href}
-              target={ch.external || ch.primary ? "_blank" : undefined}
-              rel={ch.external || ch.primary ? "noopener noreferrer" : undefined}
-              className={`flex items-center gap-5 px-6 py-5 rounded-sm transition-all group ${
-                ch.primary
-                  ? "bg-[var(--gold)] hover:bg-[var(--gold-deep)]"
-                  : "border border-[#2a2a2a] hover:border-[var(--gold)] bg-[#161616]"
-              }`}
-            >
-              <ch.icon
-                size={20}
-                className={
-                  ch.primary
-                    ? "text-[#080808] flex-shrink-0"
-                    : "text-[var(--gold)] flex-shrink-0"
-                }
-              />
-              <div className="flex-1">
-                <p
-                  className={`text-xs mb-0.5 ${
-                    ch.primary ? "text-[#080808]/70" : "text-[#888]"
-                  }`}
-                >
-                  {ch.label}
-                </p>
-                <p
-                  className={`text-sm font-medium ${
-                    ch.primary
-                      ? "text-[#080808]"
-                      : "text-white group-hover:text-[var(--gold)] transition-colors"
-                  }`}
-                >
-                  {ch.value}
-                </p>
-              </div>
-              <span
-                className={`text-lg ${
-                  ch.primary ? "text-[#080808]/60" : "text-[#555] group-hover:text-[var(--gold)] transition-colors"
-                }`}
-              >
-                →
-              </span>
-            </a>
-          ))}
+          {/* WhatsApp — primário */}
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-5 px-6 py-5 rounded-sm bg-[var(--gold)] hover:bg-[var(--gold-deep)] transition-all group"
+          >
+            <Phone size={20} className="text-[#080808] flex-shrink-0" />
+            <div className="flex-1">
+              <p className="text-xs text-[#080808]/70 mb-0.5">WhatsApp</p>
+              <p className="text-sm font-medium text-[#080808]">Conversa direta</p>
+            </div>
+            <span className="text-lg text-[#080808]/60">→</span>
+          </a>
+
+          {/* E-mail */}
+          <a
+            href={`mailto:${prof.email}`}
+            className="flex items-center gap-5 px-6 py-5 rounded-sm border border-[#2a2a2a] hover:border-[var(--gold)] bg-[#161616] transition-all group"
+          >
+            <Mail size={20} className="text-[var(--gold)] flex-shrink-0" />
+            <div className="flex-1">
+              <p className="text-xs text-[#888] mb-0.5">E-mail</p>
+              <p className="text-sm font-medium text-white group-hover:text-[var(--gold)] transition-colors">
+                Enviar mensagem
+              </p>
+            </div>
+            <span className="text-lg text-[#555] group-hover:text-[var(--gold)] transition-colors">→</span>
+          </a>
+
+          {/* Instagram */}
+          <a
+            href={prof.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-5 px-6 py-5 rounded-sm border border-[#2a2a2a] hover:border-[var(--gold)] bg-[#161616] transition-all group"
+          >
+            <InstagramIcon size={20} className="text-[var(--gold)] flex-shrink-0" />
+            <div className="flex-1">
+              <p className="text-xs text-[#888] mb-0.5">Instagram</p>
+              <p className="text-sm font-medium text-white group-hover:text-[var(--gold)] transition-colors">
+                @marllonhr
+              </p>
+            </div>
+            <span className="text-lg text-[#555] group-hover:text-[var(--gold)] transition-colors">→</span>
+          </a>
         </motion.div>
 
         <motion.p

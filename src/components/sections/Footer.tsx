@@ -52,7 +52,7 @@ export function Footer() {
                   href={`mailto:${prof.email}`}
                   className="text-sm text-[#888] hover:text-[var(--gold)] transition-colors"
                 >
-                  {prof.email}
+                  E-mail
                 </a>
               </li>
               <li>
