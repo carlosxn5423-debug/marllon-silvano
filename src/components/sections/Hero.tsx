@@ -85,18 +85,18 @@ export function Hero() {
       />
 
       {/* Foto — right side, full height, fundo escuro blend perfeito */}
-      <div className="absolute right-0 top-0 bottom-0 w-full md:w-[52%] pointer-events-none">
+      <div className="absolute right-0 top-0 bottom-0 w-full md:w-[62%] pointer-events-none">
         <Image
           src={content.professional.photoHero}
           alt={`Marllon Silvano`}
           fill
-          className="object-cover object-top"
+          className="object-cover object-center"
           priority
-          sizes="(max-width: 768px) 100vw, 52vw"
+          sizes="(max-width: 768px) 100vw, 62vw"
         />
         {/* Blend lateral (desktop) */}
         <div className="absolute inset-0 hidden md:block"
-          style={{ background: "linear-gradient(to right, #080808 0%, #080808 8%, transparent 45%)" }}
+          style={{ background: "linear-gradient(to right, #080808 0%, #080808 5%, rgba(8,8,8,0.5) 35%, transparent 60%)" }}
         />
         {/* Overlay escuro no mobile */}
         <div className="absolute inset-0 md:hidden bg-[#080808]/75" />

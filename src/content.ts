@@ -10,8 +10,8 @@ export const content = {
     whatsapp: "5541988203774", // ex: 5511999999999
     whatsappMessage: "Olá, Marllon! Tenho interesse em conversar sobre uma parceria de gestão para o meu escritório.",
     email: "contato@marllonsilvano.com",
-    linkedin: "",
-    instagram: "https://instagram.com/MarlloHr",
+    linkedin: "https://www.linkedin.com/in/marllonhr/",
+    instagram: "https://www.instagram.com/marllonhr/",
   },
 
   stats: {
@@ -24,9 +24,9 @@ export const content = {
   hero: {
     eyebrow: "Engenharia Comercial Jurídica",
     headline:
-      "Implementamos o comercial no seu escritório. Você pratica direito.",
+      "Implemento o comercial no seu escritório. Você pratica direito.",
     subheadline:
-      "Marllon Silvano e equipe estruturam o funil, treinam o time comercial e assumem a gestão da captação da sua banca — com o Método L.E.I. e foco em contratos recorrentes desde o primeiro ciclo.",
+      "Sou eu quem estrutura o funil, treina o time e assume a gestão comercial da sua banca — com o Método L.E.I. e foco em contratos recorrentes e previsíveis desde o primeiro ciclo.",
     ctaPrimary: "Quero ser parceiro",
     ctaSecondary: "Como funciona",
     socialProof: "R$23M+ em contratos gerados · 200+ advogados treinados · +14 comerciais implementados",
@@ -48,8 +48,8 @@ export const content = {
       "Marllon Silvano: quem está na operação, não na consultoria.",
     paragraphs: [
       "Formado em Direito pela UniRasil (Curitiba), pós-graduado em Gestão Comercial e Vendas. Antes de ser o responsável pela Engenharia Comercial de bancas jurídicas, sou marido e pai — e é dessa base que veio o propósito: devolver tempo e previsibilidade para advogados que escolheram o direito, não a operação de vendas.",
-      "Em 2023, assumi a gestão comercial de um dos maiores escritórios trabalhistas do Brasil — média de 1.500 contratos fechados por mês, equipe de 22+ vendedores sob nossa liderança. Desde então, implementamos mais de 14 operações comerciais em bancas de diferentes portes e áreas do direito.",
-      "Não entregamos diagnóstico e vamos embora. Entramos na operação, treinamos LDRs, SDRs e closers, estruturamos funil com POP e scripts testados, implantamos CRM, definimos OKRs e acompanhamos KPIs semanalmente. A metodologia é o Método L.E.I. — proprietária, criada para o mercado jurídico.",
+      "Em 2023, assumi a gestão comercial de um dos maiores escritórios trabalhistas do Brasil — média de 1.500 contratos fechados por mês, equipe de 22+ vendedores sob minha liderança. Desde então, implementei mais de 14 operações comerciais em bancas de diferentes portes e áreas do direito.",
+      "Não entrego diagnóstico e vou embora. Entro na operação, treino LDRs, SDRs e closers, estruturo funil com POP e scripts testados, implanto CRM, defino OKRs e acompanho KPIs semanalmente. Sou eu quem faz com você — sem terceirização, sem equipe fantasma. A metodologia é o Método L.E.I., criada por mim para o mercado jurídico.",
     ],
     quote:
       '"Seu escritório não precisa de sorte. Precisa de Engenharia Comercial."',
@@ -192,9 +192,9 @@ export const content = {
 
   // Página de escritórios gerenciados
   firms: {
-    headline: "Bancas onde já entramos e entregamos.",
+    headline: "Bancas onde já estive e entreguei.",
     subheadline:
-      "Escritórios que confiaram na parceria e saíram com operação estruturada, time treinado e contratos recorrentes. Ativos ou não, os processos ficaram.",
+      "Escritórios que confiaram no trabalho e saíram com operação estruturada, time treinado e contratos recorrentes. Ativos ou não, os processos ficaram.",
     ctaLabel: "Quero ser parceiro",
     items: [
       {
@@ -250,7 +250,7 @@ export const content = {
 
   footer: {
     tagline: "Parceria de gestão para bancas jurídicas.",
-    cnpj: "[CNPJ XX.XXX.XXX/0001-XX]",
+    cnpj: "CNPJ 54.594.003/0001-20",
     nav: [
       { label: "Sobre", href: "/#sobre" },
       { label: "Método", href: "/#metodo" },
