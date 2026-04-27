@@ -37,11 +37,13 @@ export function Header() {
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-display text-lg font-normal tracking-tight text-foreground hover:text-[var(--gold)] transition-colors"
-        >
-          {content.professional.name}
+        <Link href="/" className="flex flex-col leading-tight hover:text-[var(--gold)] transition-colors group">
+          <span className="font-display text-lg font-normal tracking-tight text-foreground group-hover:text-[var(--gold)] transition-colors">
+            {content.professional.name}
+          </span>
+          <span className="text-[10px] tracking-wide text-[var(--muted-foreground)] group-hover:text-[var(--gold)] transition-colors">
+            {content.professional.title}
+          </span>
         </Link>
 
         {/* Nav desktop */}

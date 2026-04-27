@@ -1,7 +1,7 @@
 export const content = {
   professional: {
     name: "Marllon Silvano",
-    title: "Engenharia Comercial para Escritórios de Advocacia",
+    title: "Gestão Comercial na sua Advocacia",
     // [PERSONALIZAR] Caminhos das fotos (colocar em /public/images/)
     photoHero: "/images/hero-studio.png",
     photoAbout: "/images/marllon-studio2.png",
@@ -16,20 +16,20 @@ export const content = {
 
   stats: {
     yearsExperience: "12",
-    contractsValue: "R$23M+",
+    contractsValue: "R$100M+",
     lawyersTrained: "200+",
-    commercialsImplemented: "+14",
+    commercialsImplemented: "+25",
   },
 
   hero: {
-    eyebrow: "Engenharia Comercial Jurídica",
+    eyebrow: "Tercerize sua operação comercial com quem entende do negócio",
     headline:
-      "Implemento o comercial no seu escritório. Você pratica direito.",
+      "Minha missão é transformar o seu comercial em uma máquina de protocolos",
     subheadline:
-      "Sou eu quem estrutura o funil, treina o time e assume a gestão comercial da sua banca — com o Método L.E.I. e foco em contratos recorrentes e previsíveis desde o primeiro ciclo.",
+      "Sou eu quem estrutura o funil de vendas, atuo ao lado da gestão de tráfego pago e dos sócios, contrato, capacito e gerencio o time comercial, operacional, a gestão e a diretoria do seu escritório trabalhista com minha criação: Método L.E.I.",
     ctaPrimary: "Quero ser parceiro",
     ctaSecondary: "Como funciona",
-    socialProof: "R$23M+ em contratos gerados · 200+ advogados treinados · +14 comerciais implementados",
+    socialProof: "mais de 100 milhões em contratos · 200+ advogados treinados · +25 comerciais implementados",
   },
 
   credibility: {
@@ -48,7 +48,7 @@ export const content = {
       "Marllon Silvano: quem está na operação, não na consultoria.",
     paragraphs: [
       "Formado em Direito pela UniRasil (Curitiba), pós-graduado em Gestão Comercial e Vendas. Antes de ser o responsável pela Engenharia Comercial de bancas jurídicas, sou marido e pai — e é dessa base que veio o propósito: devolver tempo e previsibilidade para advogados que escolheram o direito, não a operação de vendas.",
-      "Em 2023, assumi a gestão comercial de um dos maiores escritórios trabalhistas do Brasil — média de 1.500 contratos fechados por mês, equipe de 22+ vendedores sob minha liderança. Desde então, implementei mais de 14 operações comerciais em bancas de diferentes portes e áreas do direito.",
+      "Em 2023, assumi a gestão comercial de um dos maiores escritórios trabalhistas do Brasil — média de 1.500 contratos fechados por mês, equipe de 22+ vendedores sob minha liderança. Desde então, implementei mais de 25 operações comerciais em bancas de diferentes portes e áreas do direito.",
       "Não entrego diagnóstico e vou embora. Entro na operação, treino LDRs, SDRs e closers, estruturo funil com POP e scripts testados, implanto CRM, defino OKRs e acompanho KPIs semanalmente. Sou eu quem faz com você — sem terceirização, sem equipe fantasma. A metodologia é o Método L.E.I., criada por mim para o mercado jurídico.",
     ],
     quote:
