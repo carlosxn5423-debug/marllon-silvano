@@ -5,7 +5,7 @@ export const content = {
     // [PERSONALIZAR] Caminhos das fotos (colocar em /public/images/)
     photoHero: "/images/hero-studio.png",
     photoAbout: "/images/marllon-studio2.png",
-    photoAbout2: "/images/responsavel-working.jpg",
+    photoAbout2: "/images/about-ambiente.png",
     // [PERSONALIZAR] Links de contato
     whatsapp: "5541988203774", // ex: 5511999999999
     whatsappMessage: "Olá, Marllon! Tenho interesse em conversar sobre uma parceria de gestão para o meu escritório.",
