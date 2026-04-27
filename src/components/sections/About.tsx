@@ -10,7 +10,7 @@ export function About() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="sobre" className="relative py-20 md:py-28 grain-overlay overflow-hidden" ref={ref}>
+    <section id="sobre" className="relative py-20 md:py-28 overflow-hidden" ref={ref}>
       {/* Foto de fundo invertida */}
       <div className="absolute inset-0">
         <div className="absolute inset-0" style={{ transform: "scaleX(-1)" }}>
