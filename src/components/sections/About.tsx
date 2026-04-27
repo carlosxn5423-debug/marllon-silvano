@@ -83,7 +83,7 @@ export function About() {
                   {content.stats.yearsExperience}
                 </p>
                 <p className="text-xs text-[var(--muted-foreground)] leading-tight">
-                  anos em vendas jurídicas
+                  anos em vendas
                 </p>
               </div>
               <div className="text-center p-4 border border-[var(--border)] rounded-sm">

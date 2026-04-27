@@ -47,9 +47,9 @@ export const content = {
     headline:
       "Marllon Silvano: quem está na operação, não na consultoria.",
     paragraphs: [
-      "Formado em Direito pela UniRasil (Curitiba), pós-graduado em Gestão Comercial e Vendas. Antes de ser o responsável pela Engenharia Comercial de bancas jurídicas, sou marido e pai, e é dessa base que veio o propósito: devolver tempo e previsibilidade para advogados que escolheram o direito, não a operação de vendas.",
-      "Em 2023, assumi a gestão comercial de um dos maiores escritórios trabalhistas do Brasil, com média de 1.500 contratos fechados por mês e equipe de 22+ vendedores sob minha liderança. Desde então, implementei mais de 25 operações comerciais em bancas de diferentes portes e áreas do direito.",
-      "Não entrego diagnóstico e vou embora. Entro na operação, treino LDRs, SDRs e closers, estruturo funil com POP e scripts testados, implanto CRM, defino OKRs e acompanho KPIs semanalmente. Sou eu quem faz com você: sem terceirização, sem equipe fantasma. A metodologia é o Método L.E.I., criada por mim para o mercado jurídico.",
+      "São 12 anos de vendas dos mais diversos produtos, além de 5 anos com experiência em vendas jurídicas. Sou Formado em Direito pela UniBrasil e pós-graduado em Gestão Comercial e Vendas. Antes de ser o responsável pelo Comercial de escritórios de advocacia, sou marido e pai, e é dessa base que veio o propósito: devolver tempo e previsibilidade para advogados que escolheram o direito, não a operação de vendas.",
+      "Em 2023, assumi a gestão comercial de um dos maiores escritórios trabalhistas do Brasil, com média de 1.500 contratos fechados por mês e equipe de 22+ vendedores sob minha liderança. Desde então, implementei mais de 25 operações comerciais em bancas de diferentes portes e áreas do direito, que hoje de forma simultânea somam mais de 500 protocolos mensais e 50 funcionários.",
+      "Não entrego diagnóstico e vou embora… Entro na operação, treino LDRs, SDRs e Closers, estruturo funil com POP e scripts testados e comprovados, implanto CRM, defino OKRs e acompanho KPIs semanalmente. Sou eu quem faz com você: sem terceirização, sem equipe fantasma. A metodologia é o Método L.E.I., criada por mim para o mercado jurídico.",
     ],
     quote:
       '"Seu escritório não precisa de sorte. Precisa de Engenharia Comercial."',
