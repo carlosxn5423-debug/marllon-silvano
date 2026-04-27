@@ -64,7 +64,7 @@ export function About() {
               {content.about.headline}
             </h2>
 
-            <div className="space-y-4 text-[var(--muted-foreground)] leading-relaxed text-base mb-8">
+            <div className="space-y-4 text-[var(--muted-foreground)] leading-relaxed text-base mb-8 text-justify">
               {content.about.paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
