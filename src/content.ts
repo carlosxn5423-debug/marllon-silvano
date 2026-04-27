@@ -29,7 +29,7 @@ export const content = {
       "Sou eu quem estrutura o funil de vendas, atuo ao lado da gestão de tráfego pago e dos sócios, contrato, capacito e gerencio o time comercial, operacional, a gestão e a diretoria do seu escritório trabalhista com minha criação: Método L.E.I.",
     ctaPrimary: "Quero ser parceiro",
     ctaSecondary: "Como funciona",
-    socialProof: "mais de 100 milhões em contratos · 200+ advogados treinados · +25 comerciais implementados",
+    socialProof: "mais de 100 Milhões em contratos · 200+ advogados treinados · +25 comerciais implementados",
   },
 
   credibility: {
