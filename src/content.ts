@@ -60,9 +60,9 @@ export const content = {
     headline: "Sua banca ainda depende de você para crescer?",
     items: [
       {
-        title: "Receita imprevisível",
+        title: "Contratos perdidos",
         description:
-          "O faturamento depende de indicações pontuais e oscila mês a mês, sem previsibilidade de caixa ou crescimento consistente.",
+          "Você fecha contratos e boa parte deles ficam retidos em setores pré protocolo por várias questões distintas impedindo seu crescimento.",
         icon: "TrendingDown",
       },
       {
