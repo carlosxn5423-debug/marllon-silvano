@@ -52,7 +52,7 @@ export const content = {
       "Não entrego diagnóstico e vou embora… Entro na operação, treino LDRs, SDRs e Closers, estruturo funil com POP e scripts testados e comprovados, implanto CRM, defino OKRs e acompanho KPIs semanalmente. Sou eu quem faz com você: sem terceirização, sem equipe fantasma. A metodologia é o Método L.E.I., criada por mim para o mercado jurídico.",
     ],
     quote:
-      '"Seu escritório não precisa de sorte. Precisa de Engenharia Comercial."',
+      '"Chega de se iludir com contratos fechados que se perdem no caminho."',
   },
 
   pains: {
