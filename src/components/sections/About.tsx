@@ -13,16 +13,16 @@ export function About() {
     <section id="sobre" className="relative py-20 md:py-28 grain-overlay overflow-hidden" ref={ref}>
       {/* Foto de fundo invertida */}
       <div className="absolute inset-0">
-        <Image
-          src={content.professional.photoAbout}
-          alt=""
-          fill
-          className="object-cover object-center"
-          style={{ transform: "scaleX(-1)" }}
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0" style={{ background: "rgba(8,8,8,0.87)" }} />
+        <div className="absolute inset-0" style={{ transform: "scaleX(-1)" }}>
+          <Image
+            src={content.professional.photoAbout}
+            alt=""
+            fill
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+        </div>
+        <div className="absolute inset-0" style={{ background: "rgba(8,8,8,0.75)" }} />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-10">
