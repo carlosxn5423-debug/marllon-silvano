@@ -13,7 +13,7 @@ export function Manifesto() {
       {/* Imagem de fundo */}
       <div className="absolute inset-0">
         <Image
-          src="/images/marllon-palco2.jpg"
+          src="/images/responsavel-working.jpg"
           alt=""
           fill
           className="object-cover object-center"
