@@ -40,21 +40,21 @@ const outcomes = [
     metricNum: 1674,
     metricSuffix: "",
     label: "contratos gerenciados em 30 dias",
-    context: "Laquila Advogados — operação com 22+ vendedores simultâneos",
+    context: "Laquila Advogados:operação com 22+ vendedores simultâneos",
   },
   {
     metric: "2×",
     metricNum: 2,
     metricSuffix: "×",
     label: "contratos dobrados em menos de 1 mês",
-    context: "Carlos Cruz Advocacia — mesmo investimento em tráfego, resultado dobrado",
+    context: "Carlos Cruz Advocacia:mesmo investimento em tráfego, resultado dobrado",
   },
   {
     metric: "Top 5",
     metricNum: null,
     metricSuffix: "",
     label: "maior escritório trabalhista do Brasil",
-    context: "Gustavo Souza Advogados — estruturação de operações comerciais complexas",
+    context: "Gustavo Souza Advogados:estruturação de operações comerciais complexas",
   },
 ];
 
