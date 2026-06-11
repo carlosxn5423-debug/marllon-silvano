@@ -40,14 +40,14 @@ const outcomes = [
     metricNum: 1674,
     metricSuffix: "",
     label: "contratos gerenciados em 30 dias",
-    context: "Laquila Advogados:operação com 22+ vendedores simultâneos",
+    context: "Laquila Advogados: Operação com 22+ vendedores simultâneos em 2025",
   },
   {
-    metric: "2×",
-    metricNum: 2,
-    metricSuffix: "×",
-    label: "contratos dobrados em menos de 1 mês",
-    context: "Carlos Cruz Advocacia:mesmo investimento em tráfego, resultado dobrado",
+    metric: "600+",
+    metricNum: 600,
+    metricSuffix: "+",
+    label: "contratos protocolados em 2026",
+    context: "Nespolo e Oliveira Advogados: Ticket mínimo de acordo em 4k. Gerenciamento de contratos milionários fechados em operação de acidente de trabalho, passando 5 milhões em um único contrato.",
   },
   {
     metric: "Top 5",
@@ -88,7 +88,7 @@ export function Results() {
             { target: 12, suffix: "", label: "anos em vendas jurídicas", size: "text-3xl md:text-4xl" },
             { target: 23, prefix: "R$", suffix: "M+", label: "em contratos gerados", size: "text-2xl md:text-3xl" },
             { target: 200, suffix: "+", label: "advogados treinados", size: "text-3xl md:text-4xl" },
-            { target: 14, prefix: "+", suffix: "", label: "comerciais implementados", size: "text-3xl md:text-4xl" },
+            { target: 17, prefix: "+", suffix: "", label: "comerciais implementados", size: "text-3xl md:text-4xl" },
           ].map((stat, i) => (
             <motion.div
               key={i}

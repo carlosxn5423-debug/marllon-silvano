@@ -18,7 +18,7 @@ export const content = {
     yearsExperience: "12",
     contractsValue: "R$100M+",
     lawyersTrained: "200+",
-    commercialsImplemented: "+25",
+    commercialsImplemented: "+17",
   },
 
   hero: {
@@ -62,25 +62,25 @@ export const content = {
       {
         title: "Contratos perdidos",
         description:
-          "Você fecha contratos e boa parte deles ficam retidos em setores pré protocolo por várias questões distintas impedindo seu crescimento.",
+          "Sua I.A ou seu comercial fecha contratos e boa parte deles ficam retidos em setores pré protocolo por várias questões distintas impedindo seu crescimento.",
         icon: "TrendingDown",
       },
       {
         title: "Sócios na operação",
         description:
-          "Os sócios gastam energia em gestão e vendas quando deveriam estar praticando direito. A banca cresce até onde o tempo dos sócios permite.",
+          "Você é o Severino do seu escritório e faz tudo, inclusive vender, treinar, contratar e gerir tudo no seu comercial enquanto seu jurídico e financeiro está um caos.",
         icon: "Users",
       },
       {
         title: "Captação sem processo",
         description:
-          "Não existe um funil claro de qualificação e conversão. Oportunidades boas se perdem por falta de acompanhamento estruturado.",
+          "Seu escritório não possui um funil claro de qualificação e conversão e as oportunidades boas se perdem por falta de acompanhamento estruturado e uma equipe alinhada, direcionada e supervisionada.",
         icon: "GitBranch",
       },
       {
         title: "Sem estrutura de gestão",
         description:
-          "A banca cresceu, mas sem processos, indicadores ou alguém responsável pelo negócio. Tudo depende da memória e energia dos sócios.",
+          "O seu escritório cresceu, mas sem processos, POP's, controle interno, indicadores ou alguém responsável pelo comercial e tudo depende da memória e energia dos sócios ou pior, do seu time comercial.",
         icon: "BarChart2",
       },
     ],
@@ -198,58 +198,98 @@ export const content = {
     ctaLabel: "Quero ser parceiro",
     items: [
       {
-        name: "Laquila Advogados",
-        area: "Direito Trabalhista",
-        location: "[CIDADE, ESTADO]",
-        metric: "1.674",
-        metricLabel: "contratos gerenciados em 30 dias",
-        since: "[ANO]",
-        logo: "/images/firms/laquila.jpg",
-        featured: true,
-        description:
-          "Gestão completa de operação com 22+ vendedores simultâneos. Estruturação do funil, liderança de time e controle de resultado em escala.",
-      },
-      {
         name: "Gustavo Souza Advogados",
-        area: "Operações Comerciais",
-        location: "[CIDADE, ESTADO]",
         metric: "Top 5",
-        metricLabel: "maior escritório do Brasil",
-        since: "[ANO]",
+        metricLabel: "maior escritório trabalhista do Brasil",
         logo: "/images/firms/gustavo-souza.jpg",
-        featured: true,
         description:
           "Treinamento e estruturação de operações comerciais complexas em um dos maiores escritórios do país.",
       },
       {
         name: "Carlos Cruz Advocacia",
-        area: "Direito Trabalhista",
-        location: "[CIDADE, ESTADO]",
         metric: "2×",
         metricLabel: "contratos em menos de 1 mês",
-        since: "[ANO]",
         logo: "/images/firms/carlos-cruz.png",
-        featured: true,
         description:
-          "Contratos dobrados em menos de um mês com o mesmo valor de investimento já existente na operação.",
+          "Contratos PROTOCOLADOS foram dobrados em menos de um mês com o mesmo valor de investimento já existente na operação e em crescimento contante.",
       },
       {
-        name: "Molina Trindade Advogados",
-        area: "[ÁREA DE ATUAÇÃO]",
-        location: "[CIDADE, ESTADO]",
-        metric: "Parceiro",
-        metricLabel: "estratégico",
-        since: "[ANO]",
-        logo: "/images/firms/molina-trindade.jpg",
-        featured: false,
-        description: "[PERSONALIZAR — breve descrição da parceria]",
+        name: "Bruno Gomes Ribeiro Advogados",
+        metric: "64",
+        metricLabel: "contratos de acidente de trabalho no 1º mês",
+        logo: "",
+        description:
+          "64 contratos de acidente de trabalho fechados no primeiro mês de operação.",
       },
-      // [PERSONALIZAR] Adicionar demais escritórios parceiros aqui
+      {
+        name: "Nespolo Advogados",
+        metric: "488",
+        metricLabel: "contratos fechados em um mês",
+        logo: "",
+        description:
+          "488 contratos fechados em um mês com gerenciamento de uma equipe de mais de 12 pessoas, mais atuação ao lado da diretoria.",
+      },
+      {
+        name: "Chiquiti Advogados",
+        metric: "2×",
+        metricLabel: "protocolos em um único mês",
+        logo: "",
+        description:
+          "Dobrou a operação e o número de protocolos realizados em um único mês com treinamento completo e implementação comercial.",
+      },
+      {
+        name: "RHM Advogados",
+        metric: "",
+        metricLabel: "",
+        logo: "",
+        description:
+          "Estruturou toda operação desde a gestão junto à equipe de marketing até o protocolo dos processos.",
+      },
+      {
+        name: "André Porto Romero Advogados",
+        metric: "",
+        metricLabel: "",
+        logo: "",
+        description:
+          "Estruturou, contratou e treinou toda operação desde a gestão junto à equipe de marketing até o protocolo dos processos.",
+      },
+      {
+        name: "Instituto Denkmal",
+        metric: "",
+        metricLabel: "",
+        logo: "",
+        description:
+          "Estruturou toda operação desde a gestão junto à equipe de marketing até o fechamento de alunos que cursam Alemão.",
+      },
+      {
+        name: "Molina e Trindade Advogados",
+        metric: "",
+        metricLabel: "",
+        logo: "/images/firms/molina-trindade.jpg",
+        description:
+          "Estruturou toda operação desde a gestão junto à equipe de marketing até internalização de I.A.",
+      },
+      {
+        name: "Cúpula Trabalhista",
+        metric: "",
+        metricLabel: "",
+        logo: "",
+        description:
+          "Palestrante convidado onde compartilhou com centenas de advogados suas previsões para 2026.",
+      },
+      {
+        name: "Laquila Advogados",
+        metric: "1.674",
+        metricLabel: "contratos gerenciados em 30 dias",
+        logo: "/images/firms/laquila.jpg",
+        description:
+          "Gestão completa de operação com 22+ vendedores simultâneos. Estruturação do funil, liderança de time e controle de resultado em escala.",
+      },
     ],
   },
 
   footer: {
-    tagline: "Parceria de gestão para bancas jurídicas.",
+    tagline: "Parceria de gestão comercial e operacional para escritórios trabalhistas no Brasil.",
     cnpj: "CNPJ 54.594.003/0001-20",
     nav: [
       { label: "Sobre", href: "/#sobre" },
