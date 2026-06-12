@@ -86,7 +86,7 @@ export function Results() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {[
             { target: 12, suffix: "", label: "anos em vendas jurídicas", size: "text-3xl md:text-4xl" },
-            { target: 23, prefix: "R$", suffix: "M+", label: "em contratos gerados", size: "text-2xl md:text-3xl" },
+            { target: 100, prefix: "R$", suffix: "M+", label: "em contratos gerados", size: "text-2xl md:text-3xl" },
             { target: 200, suffix: "+", label: "advogados treinados", size: "text-3xl md:text-4xl" },
             { target: 17, prefix: "+", suffix: "", label: "comerciais implementados", size: "text-3xl md:text-4xl" },
           ].map((stat, i) => (
